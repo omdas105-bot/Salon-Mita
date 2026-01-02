@@ -107,7 +107,7 @@ const Booking: React.FC = () => {
       <section className="bg-white py-24 border-t border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-12 gap-16">
           
-          <div className="lg:col-span-5 flex flex-col gap-8">
+          <div className="lg:col-span-5 flex flex-col gap-8 text-center md:text-left">
             <ScrollReveal>
               <h2 className="text-3xl font-serif text-secondary mb-6">Our Friendly Policies</h2>
             </ScrollReveal>
@@ -117,7 +117,7 @@ const Booking: React.FC = () => {
               { icon: UserX, title: "No-Shows", text: "Missed appointments without notice may require a deposit for future bookings." }
             ].map((policy, i) => (
               <ScrollReveal key={i} delay={`delay-${i * 100}`} animation="animate-fade-in-up">
-                <div className="flex gap-6 p-6 rounded-sm bg-neutral-soft border border-gray-100 hover:border-primary/20 transition-colors group">
+                <div className="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-4 sm:gap-6 p-6 rounded-sm bg-neutral-soft border border-gray-100 hover:border-primary/20 transition-colors group">
                   <policy.icon className="shrink-0 text-primary mt-1 group-hover:scale-110 transition-transform" size={24} strokeWidth={1.5} />
                   <div>
                     <h4 className="font-bold font-serif text-secondary text-lg mb-2">{policy.title}</h4>
@@ -129,7 +129,7 @@ const Booking: React.FC = () => {
           </div>
 
           <div className="lg:col-span-7">
-            <ScrollReveal>
+            <ScrollReveal className="text-center md:text-left">
               <h2 className="text-3xl font-serif text-secondary mb-10">Frequently Asked Questions</h2>
             </ScrollReveal>
             <div className="space-y-4">
@@ -141,11 +141,11 @@ const Booking: React.FC = () => {
               ].map((faq, i) => (
                 <ScrollReveal key={i} delay={`delay-${i * 100}`} animation="animate-fade-in-up">
                   <details className="group bg-neutral-soft rounded-sm overflow-hidden border border-transparent open:border-gray-200 transition-colors">
-                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 p-6 text-secondary font-serif text-lg hover:bg-gray-100 transition-colors">
+                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 p-6 text-secondary font-serif text-lg hover:bg-gray-100 transition-colors text-left">
                       {faq.q}
-                      <ChevronDown size={20} className="transition group-open:rotate-180 text-gray-400" />
+                      <ChevronDown size={20} className="transition group-open:rotate-180 text-gray-400 shrink-0" />
                     </summary>
-                    <div className="px-6 pb-6 pt-0 text-gray-500 font-light leading-relaxed">{faq.a}</div>
+                    <div className="px-6 pb-6 pt-0 text-gray-500 font-light leading-relaxed text-left">{faq.a}</div>
                   </details>
                 </ScrollReveal>
               ))}

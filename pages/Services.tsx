@@ -20,7 +20,7 @@ const Services: React.FC = () => {
             style={{ backgroundImage: "url('https://images.fresha.com/locations/location-profile-images/2667506/4955559/20d6957d-32ee-4b0d-8acc-0391280ebc8f-SalonMita-CA-Qubec-Montreal-Fresha.jpg?class=gallery-modal-large&watermark=true&f_width=1920')" }}
           ></div>
         </div>
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-8 py-24 lg:py-36 flex flex-col justify-center min-h-[400px]">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-8 py-24 lg:py-36 flex flex-col justify-center items-center md:items-start text-center md:text-left min-h-[400px]">
           <ScrollReveal animation="animate-fade-in-up">
             <span className="text-primary font-bold tracking-widest text-xs uppercase mb-6 block">Curated Excellence</span>
           </ScrollReveal>
@@ -30,7 +30,7 @@ const Services: React.FC = () => {
             </h2>
           </ScrollReveal>
           <ScrollReveal animation="animate-fade-in-up" delay="delay-400">
-            <p className="text-gray-300 text-lg md:text-xl font-light max-w-xl leading-relaxed mb-8 border-l-2 border-primary pl-6">
+            <p className="text-gray-300 text-lg md:text-xl font-light max-w-xl leading-relaxed mb-8 md:border-l-2 md:border-primary md:pl-6">
               From precision cuts to expert coloring and gentle waxing, experience a level of care tailored uniquely to your style.
             </p>
           </ScrollReveal>
@@ -59,7 +59,7 @@ const Services: React.FC = () => {
 
         {/* Not Sure Banner */}
         <ScrollReveal animation="animate-fade-in-up">
-          <div className="rounded-sm bg-secondary text-white p-10 flex flex-col md:flex-row items-center justify-between gap-8 shadow-2xl relative overflow-hidden">
+          <div className="rounded-sm bg-secondary text-white p-10 flex flex-col md:flex-row items-center justify-between gap-8 shadow-2xl relative overflow-hidden text-center md:text-left">
             <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full translate-x-1/2 -translate-y-1/2 blur-2xl"></div>
             <div className="relative z-10">
               <h4 className="text-2xl font-serif mb-3">Not sure what to pick?</h4>
@@ -115,7 +115,7 @@ interface ServiceSectionProps {
 const ServiceSection: React.FC<ServiceSectionProps> = ({ title, description, icon: Icon, items }) => {
   return (
     <div>
-      <ScrollReveal animation="animate-fade-in-up" className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10 pb-6 border-b border-gray-100">
+      <ScrollReveal animation="animate-fade-in-up" className="flex flex-col md:flex-row items-center md:items-end justify-between gap-4 mb-10 pb-6 border-b border-gray-100 text-center md:text-left">
         <div>
           <h3 className="text-3xl font-serif text-secondary tracking-tight">{title}</h3>
           <p className="text-gray-500 font-light mt-2">{description}</p>
@@ -144,15 +144,16 @@ const ServiceAccordion: React.FC<ServiceAccordionProps> = ({ item }) => {
     <div className={`bg-white rounded-sm border border-gray-100 shadow-sm transition-all duration-300 ${isOpen ? 'shadow-md border-primary/20' : 'hover:shadow-md'}`}>
       <button 
         onClick={() => setIsOpen(!isOpen)}
-        className="w-full flex items-center justify-between gap-4 p-6 text-left group"
+        className="w-full flex items-center justify-between gap-4 p-4 sm:p-6 text-left group"
       >
-        <div className="flex flex-col sm:flex-row sm:items-end gap-2 sm:gap-4 flex-1 w-full">
-          <h4 className="text-xl font-serif text-secondary group-hover:text-primary transition-colors shrink-0">{item.name}</h4>
-          {/* Flexible dotted line separator */}
+        <div className="flex flex-row items-end justify-between w-full gap-2 sm:gap-4">
+          <h4 className="text-lg sm:text-xl font-serif text-secondary group-hover:text-primary transition-colors">{item.name}</h4>
+          {/* Flexible dotted line separator - Hidden on Mobile */}
           <span className="hidden sm:block flex-1 border-b-2 border-dotted border-gray-200 mb-1.5 mx-2"></span>
-          <span className="text-secondary font-bold font-serif text-lg shrink-0 w-24 text-right">{item.price}</span>
+          {/* Price - Right Aligned on All Screens */}
+          <span className="text-secondary font-bold font-serif text-lg shrink-0 sm:w-24 text-right">{item.price}</span>
         </div>
-        <div className={`w-8 h-8 rounded-full flex items-center justify-center transition-all ml-4 shrink-0 ${isOpen ? 'bg-primary text-white rotate-180' : 'bg-neutral-soft text-gray-400 group-hover:text-primary'}`}>
+        <div className={`w-8 h-8 rounded-full flex items-center justify-center transition-all ml-0 sm:ml-4 shrink-0 ${isOpen ? 'bg-primary text-white rotate-180' : 'bg-neutral-soft text-gray-400 group-hover:text-primary'}`}>
           <ChevronDown size={18} />
         </div>
       </button>

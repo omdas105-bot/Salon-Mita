@@ -95,22 +95,22 @@ const Home: React.FC = () => {
               {
                 title: "Eyebrow Threading",
                 desc: "Precision shaping tailored to your unique facial structure.",
-                img: "https://scontent.fymq3-1.fna.fbcdn.net/v/t39.30808-6/476644984_1062374292601435_2529500814856619906_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=cXngTI27JPcQ7kNvwF1-1bd&_nc_oc=AdldeK5Rz36aGlB_q9K9QkCyWARF7YppQ6HQbWg6AMARu3H70tMF3HoT6U_5VKR0hIw&_nc_zt=23&_nc_ht=scontent.fymq3-1.fna&_nc_gid=RbwcaJxRYtQ6wHduIhpQWw&oh=00_AflGZ6aS2cYB4Xexc0VTDg0U0TcIYGD9ENsksztPvEOhPw&oe=6953B7CA"
+                img: "https://res.cloudinary.com/dam04v7gq/image/upload/v1767395086/Screenshot_2026-01-02_113706_b6aeqf.png"
               },
               {
                 title: "Full Body Waxing",
                 desc: "Smooth, long-lasting results with our gentle waxing techniques.",
-                img: "https://scontent.fymq3-1.fna.fbcdn.net/v/t39.30808-6/476349763_1060391236133074_6429136941985986860_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=SeM1F_V2UycQ7kNvwGMr9qE&_nc_oc=AdkcuMWOVZ1eR4uUH-TIsI3l0xHb2JKa0ilJBsc7C_7aJSWgP3-LG_vXD6IKJbhVasE&_nc_zt=23&_nc_ht=scontent.fymq3-1.fna&_nc_gid=MAyHgfa7MVmtdOaH-vwfgA&oh=00_AflrAOLXmRzheuzAZwYuGNa4MxakeTbRZHevBQd1i8qDAQ&oe=6953B590"
+                img: "https://res.cloudinary.com/dam04v7gq/image/upload/v1767395149/Screenshot_2026-01-02_180535_vahozm.png"
               },
               {
                 title: "Haircuts & Styling",
                 desc: "Modern cuts, blowouts, and styling for any occasion.",
-                img: "https://scontent.fymq3-1.fna.fbcdn.net/v/t39.30808-6/492000962_1120446406794223_2654223447872341603_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=X6JGF8qASycQ7kNvwF6LCJz&_nc_oc=Adm8syLMdfgJgJtNLu2KurGxIj3ROWP5tLxnsX3kBkDYD0r7OjI5NP1P4ElEXycjaYY&_nc_zt=23&_nc_ht=scontent.fymq3-1.fna&_nc_gid=TtJKxdSnNeAO49CQKzRlxg&oh=00_AflvAbAJfrN2IMZInc3zSP3qwKtxHzHlNi_zWT7IRbl60Q&oe=6953A0BA"
+                img: "https://res.cloudinary.com/dam04v7gq/image/upload/v1767395033/Screenshot_2026-01-02_113632_pap0hw.png"
               },
               {
                 title: "Hair Coloring",
                 desc: "Vibrant colors, highlights, and balayage by expert colorists.",
-                img: "https://scontent.fymq3-1.fna.fbcdn.net/v/t39.30808-6/476825115_1062366289268902_4340905939287969410_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=4i-uOoCMjaYQ7kNvwHYVBRT&_nc_oc=AdnLh9z0oEyuDSL8WPKp7IkojVcLtUauyeHQKcl_OkabgaJuKJ1AAIAWd8it8GHBE4o&_nc_zt=23&_nc_ht=scontent.fymq3-1.fna&_nc_gid=yy9aDRiHI6U-Pkfn6l8TrA&oh=00_Afn_YH-7Tt41KqkJFVAxIth1FdFIrJkRn9pZ9yGppUcMbA&oe=6953B872"
+                img: "https://res.cloudinary.com/dam04v7gq/image/upload/v1767395085/Screenshot_2026-01-02_113724_vpjqs4.png"
               }
             ].map((service, idx) => (
               <ScrollReveal key={idx} delay={`delay-${idx * 200}`} className="h-full">
@@ -155,13 +155,13 @@ const Home: React.FC = () => {
             <ScrollReveal animation="animate-zoom-in">
                <div className="absolute -top-6 -left-6 w-32 h-32 bg-primary/10 -z-10 rounded-full blur-xl"></div>
               <div className="rounded-sm overflow-hidden shadow-2xl aspect-[4/3] w-full">
-                <div className="w-full h-full bg-cover bg-center" style={{ backgroundImage: "url('https://scontent.fymq3-1.fna.fbcdn.net/v/t39.30808-6/491999956_1120448450127352_38723983626140708_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=_QPCcAC4jb8Q7kNvwEg5hKT&_nc_oc=AdnEVCPtIcoPHeybnrXaoXryE922g0-lUoz8Z-BCb95_P55_ZBQojcGHyHgtPg2OfeM&_nc_zt=23&_nc_ht=scontent.fymq3-1.fna&_nc_gid=RnWQbbsLnCYkzIAsokmqbw&oh=00_Afmo2-3MIQwOMWZBABYftmnH0Zy2kxDP4rqHP_au6EYiZg&oe=6953AA10')" }}></div>
+                <div className="w-full h-full bg-cover bg-center" style={{ backgroundImage: "url('https://res.cloudinary.com/dam04v7gq/image/upload/v1767395241/Screenshot_2026-01-02_180707_btsaq8.png')" }}></div>
               </div>
               <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-sand/30 -z-10 rounded-full blur-xl"></div>
             </ScrollReveal>
           </div>
           
-          <div className="flex-1 space-y-8 pl-0 md:pl-8">
+          <div className="flex-1 space-y-8 pl-0 md:pl-8 text-center md:text-left">
             <ScrollReveal animation="animate-fade-in-up" delay="delay-200">
               <div className="space-y-4">
                 <span className="text-primary font-bold tracking-widest text-xs uppercase">Our Specialty</span>
@@ -176,8 +176,8 @@ const Home: React.FC = () => {
                   "Chemical-free",
                   "Less irritation than waxing"
                 ].map((item, i) => (
-                  <li key={i} className="flex items-center gap-4 text-slate-700 font-light">
-                    <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+                  <li key={i} className="flex items-center justify-center md:justify-start gap-4 text-slate-700 font-light">
+                    <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center text-primary shrink-0">
                       <CheckCircle size={14} /> 
                     </div>
                     {item}

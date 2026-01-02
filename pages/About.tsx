@@ -26,7 +26,7 @@ const About: React.FC = () => {
             <div className="relative w-full max-w-md aspect-[4/5] rounded-t-full rounded-b-lg overflow-hidden shadow-2xl mx-auto">
               <div 
                 className="w-full h-full bg-cover bg-center hover:scale-105 transition-transform duration-1000" 
-                style={{ backgroundImage: "url('https://scontent.fymq3-1.fna.fbcdn.net/v/t39.30808-6/558669616_1258942136277982_8340917778932050699_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=eNu7CgTJiLsQ7kNvwFo3S_m&_nc_oc=AdkmXHGQ9ibB0mWL0fiPcl_5Cfd9A9Q-9oFAcwN8iBOl4H-DcyZKetlIUuxX6wP5jj4&_nc_zt=23&_nc_ht=scontent.fymq3-1.fna&_nc_gid=sQ7TqjLytnbZx5fTUFgeig&oh=00_AfkcfrKehDgF8nQhzpEJ5zvyy_3C3EUpdSVC706qgmD56Q&oe=6953B6DC')" }}
+                style={{ backgroundImage: "url('https://res.cloudinary.com/dam04v7gq/image/upload/v1767395350/Screenshot_2026-01-02_180853_yuecr5.png')" }}
               ></div>
             </div>
           </ScrollReveal>
@@ -45,7 +45,7 @@ const About: React.FC = () => {
               ></div>
             </ScrollReveal>
           </div>
-          <div className="w-full md:w-1/2 flex flex-col gap-8">
+          <div className="w-full md:w-1/2 flex flex-col gap-8 text-center md:text-left items-center md:items-start">
             <ScrollReveal animation="animate-fade-in-up" delay="delay-200">
               <h2 className="text-secondary text-4xl font-serif">Our Story</h2>
               <div className="space-y-6 text-slate-600 font-light leading-relaxed text-lg mt-4">
@@ -56,7 +56,7 @@ const About: React.FC = () => {
                    We pride ourselves on listening to our clients, delivering consistent quality, and creating a space where everyone feels welcome.
                 </p>
               </div>
-              <div className="flex gap-12 pt-6 border-t border-gray-200 mt-6">
+              <div className="flex gap-12 pt-6 border-t border-gray-200 mt-6 justify-center md:justify-start">
                  <div><p className="text-4xl font-serif text-secondary">5k+</p><p className="text-sm text-gray-500 uppercase tracking-wider mt-1">Happy Clients</p></div>
                  <div><p className="text-4xl font-serif text-secondary">10+</p><p className="text-sm text-gray-500 uppercase tracking-wider mt-1">Years Exp</p></div>
                  <div><p className="text-4xl font-serif text-secondary">4.0</p><p className="text-sm text-gray-500 uppercase tracking-wider mt-1">Rating</p></div>
