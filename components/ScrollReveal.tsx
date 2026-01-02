@@ -38,10 +38,17 @@ const ScrollReveal: React.FC<ScrollRevealProps> = ({
     };
   }, [threshold]);
 
+  // SAFE FIX:
+  // Instead of using 'opacity-0' class which might permanently hide content if animations fail,
+  // we rely on the animation class itself to handle the starting opacity (defined in index.html).
+  // If isVisible is false, we explicitly set opacity to 0 via style (safest).
+  // If isVisible is true, we remove the opacity style and let the animation class take over.
+  
   return (
     <div 
       ref={ref} 
-      className={`${className} ${delay} ${isVisible ? animation : 'opacity-0'}`}
+      className={`${className} ${delay} ${isVisible ? animation : ''}`}
+      style={{ opacity: isVisible ? undefined : 0, transition: 'opacity 0.2s' }}
     >
       {children}
     </div>
